@@ -1,0 +1,525 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]--> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <style type="text/css">
+      .ReadMsgBody {
+        width: 100%;
+      }
+      /* Forces Hotmail to display emails at full width */
+      .ExternalClass {
+        width: 100%;
+      }
+      /* Hotmail table centering fix */
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+        line-height: 100%;
+      }
+      /* Forces Hotmail to display normal line spacing */
+      .ExternalClass * {
+        line-height: 100%
+      }
+      p {
+        margin: 1em 0;
+      }
+      /* Yahoo paragraph fix */
+      table td {
+        border-collapse: collapse;
+      }
+      /* This resolves the Outlook 07, 10, and Gmail td padding issue fix */
+      /* This resolves the issue when iphone puts links on dates, etc. */
+      .appleLinksWhite a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .appleLinksGray a {
+        color: #1f326f;
+        text-decoration: none;
+      }
+      .appleLinksBlack a {
+        color: #000000;
+        text-decoration: none;
+      }
+      a.mobileshow, .mobilehide {
+        display: none;
+        color: #ffffff;
+        /* for Gmail */
+      }
+      sup {
+        line-height: 0;
+        font-size: 55%;
+      }
+      /* APPLE AUTOLINK FIX */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+    </style>
+    <style type="text/css"> 
+      @media only screen and (max-width: 600px) {
+        html, body {
+          width: 100% !important;
+          min-width: 100% !important;
+          margin: 0 auto !important;
+        }
+        .container, .tableBlock {
+          width: 100% !important;
+          min-width: 100% !important;
+          margin: 0 auto !important;
+        }
+        .photo, .image, .imgPlaceholder img {
+          width: 100% !important;
+          display: block !important;
+          height:auto !important;
+        }
+        .show {
+          display: block !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: visible !important;
+          width: 100% !important;
+          max-height: inherit !important;
+        }
+        .hide, .mobile-hidden {
+          display: none !important;
+        }
+        .drop, .block {
+          width: 100% !important;
+          display: block !important;
+        }
+        .drop-center {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+        }
+        .pad20 {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+        .noLeftRightPad {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        .padBot10 {
+          padding-bottom: 10px !important;
+        }
+        .padBot20 {
+          padding-bottom: 20px !important;
+        }
+        .padBot30 {
+          padding-bottom: 30px !important;
+        }
+        .center {
+          text-align:center !important;
+        }
+        .responsive-td {
+          width:100% !important;
+          display:block !important;
+          padding:0 !important;
+        }
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 450px) {
+        body {
+          width: 100% !important;
+          min-width: 100% !important;
+          margin: 0 auto !important;
+        }
+        .body {
+          min-width: 100vw;
+        }
+        .mobWidth{
+          width: 330px !important;
+        }
+        .mobile-only {
+          display: block !important;
+          max-height: none !important;
+        }
+        .pad20 {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+        .noLeftRightPad {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        .padBot10 {
+          padding-bottom: 10px !important;
+        }
+        .padBot20 {
+          padding-bottom: 20px !important;
+        }
+        .top30{
+          padding-top: 30px !important;
+        }
+        .top15{
+          padding-top: 15px !important;
+        }
+        .mobPerson{
+          padding-left: 0px !important;
+        }
+        .padBot30 {
+          padding-bottom: 30px !important;
+        }
+        .center {
+          text-align: center !important;
+        }
+        .container, .tableBlock {
+          width: 100% !important;
+        }
+        .mobilePadding20 {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+        .mobilePadding10 {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+        .photo, .image, .imgPlaceholder img {
+          width: 100% !important;
+          display: block !important;
+          height:auto !important;
+        }
+        .show {
+          display: block !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: visible !important;
+          width: 100% !important;
+          max-height: inherit !important;
+        }
+        .hide, .mobile-hidden {
+          display: none !important;
+        }
+        .drop, .block {
+          width: 100% !important;
+          display: block !important;
+        }
+        .responsive-td {
+          width: 100% !important;
+          display: block !important;
+          padding: 0 !important;
+        }
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* GMAIL APP FIX */
+        u + .body .gwfw {
+          width: 100% !important;
+          width: 100vw !important;
+        }
+        /* SAMSUNG APP FIX */
+        #MessageViewBody, #MessageWebViewDiv {
+          min-width:100vw;
+          margin:0 !important;
+          zoom:1 !important;
+        }
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 0px) {
+        /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+body, .tb_properties{font-family: Arial !important; font-size: 16px !important; color: #808080 !important; line-height: 1.5 !important; padding: 0px !important; }.buttonstyles{font-family: Arial, helvetica, sans-serif !important; font-size: 16px !important; color: #FFFFFF !important; padding: 0px 20px !important; }h1{font-family: Arial !important; font-size: 22px !important; color: #202020 !important; line-height: 1 !important; }h2{font-family: Arial !important; font-size: 20px !important; color: #202020 !important; line-height: 1 !important; }h3{font-family: Arial !important; font-size: 18px !important; color: #202020 !important; line-height: 1 !important; }a:not(.buttonstyles){line-height: 1 !important; }.mobile-hidden{display: none !important; }.responsive-td {width: 100% !important;
+ display: block !important; padding: 0 !important;}
+/* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+      }
+    </style>
+    <style type="text/css">
+      @media only screen and (max-width: 320px) {
+        /* global 320 wide styles for targeting smallest iPhones */
+        .mobWidth{
+          width: 260px !important;
+        }
+      }
+    </style>
+    <style>
+      /* Set Default Font Styles */
+      td, p, h1, h2, h3, span, a {
+        font-family: 'Montserrat', Arial, sans-serif !important;
+      }
+      @media only screen and (max-width: 450px) {
+       td, p, h1, h2, h3, span, a {
+        font-family: 'Montserrat', Arial, sans-serif !important;
+      }
+      }
+    </style>
+    <!--[if gte mso 9]> <style> /* Targets Outlook 2007 and 2010 - setting default fonts */ html, body { font-family: arial, sans-serif !important; }   table { font-family: arial, sans-serif !important; }   td, a, h1, h2, h3, li { font-family: arial, sans-serif !important; } /* Fixes superscript’s for Outlook */ sup { font-size: 100% !important; } </style> <![endif]-->
+    <title>ASD Market Week
+    </title>
+  </head>
+  <body bgcolor="transparent" text="#000000" style="-webkit-text-size-adjust:none;background-color : transparent; font-family : Arial, helvetica, sans-serif; line-height : 115%; font-size : 16px; color : #505050; padding : 0px; ">
+    <div style="font-size:0; line-height:0;">
+      <img src="https://click.m.emeraldexpoinfo.com/open.aspx?ffcb10-febf16797d62007e-%%ex2;listsubid%%-fe3911717164047c761478-%%ex2;listid%%-%%ex2;SubscriberID%%-%%ex2;_JobSubscriberBatchID%%&d=%%_linkdbid%%&bmt=0" width="1" height="1" alt="">
+      
+    </div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+      <tr>
+        <td align="center">
+          <table cellspacing="0" cellpadding="0" border="0" width="600" class="container" align="center">
+            <tr>
+              <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td width="100%" style="font-family: 'Montserrat', Arial, sans-serif; font-size: 11px;" align="center" height="40" >
+                      <a href="javascript:void(0);" alias="View on Web" style="color:#777;" >View on Web</a>
+                    </td>
+                  </tr>
+                </table>
+                <table class="tb_properties border_style" style="background-color : #FFFFFF; border : 0px;font-size : 16px; font-family : Arial, helvetica, sans-serif; line-height : 115%; color : #505050; " cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" width="100%">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <!-- added padding here -->
+                          <td class="content_padding" style="padding : 0px; ">
+                            <!-- end of comment -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr> 
+                                <!-- top slot -->
+                                <td align="center" class="header" valign="top">
+                                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" valign="top">
+                                          <table cellspacing="0" cellpadding="0" style="width:100%">
+                                            <tbody>
+                                              <tr>
+                                                <td class="responsive-td" valign="top" style="width: 100%;">
+                                                  <table width="100%" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                      <td width="100%" style="background-color: #ffffff;" align="left">
+                                                        
+                                                        <!-- LOGO / PREHEADER SLOT GOES HERE -->
+                                                        <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 0px; " class="stylingblock-content-wrapper camarker-inner"><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td valign="top" class="responsive-td" style="width: 100%; padding-bottom: 0px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 15px 10px 10px; " class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="center">
+<a style="font-weight:normal;color:#25B5E4;text-decoration:underline;line-height:100%;" href="https://asdonline.com/" title="" alias="" conversion="false" data-linkto="https://">
+<img data-assetid="10265" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/1/ce54ed3f-457b-4dbe-80dc-84140ed03c86.png" alt="ASD Market Week" height="20" width="200" style="display: block; padding: 6px; text-align: center; height: 20px; width: 200px; border: 0px;"></a></td></tr></table></td></tr></table></td></tr></table></td></tr><tr><td><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td valign="top" class="responsive-td" style="width: 100%; padding-top: 0px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px; " class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" style=" font-family: 'Montserrat', Arial, sans-serif; font-size: 12px;  color:#333333;" width="100%">
+				<span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color:#505050;">AUGUST 21 - 24, 2022 | LAS VEGAS CONVENTION CENTER&nbsp; | </span><a alias="" conversion="false" data-linkto="other" href="" rel="noopener" style="color:#d11c69;text-decoration:underline;font-weight:bold;line-height:100%;" target="_blank" title="">REGISTER FOR FREE</a></span></span></td></tr></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table>
+                                                        
+                                                        <!-- START BODY SLOT -->
+                                                        <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #FBD9DE; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 0px 0px; " class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="center"><img data-assetid="171472" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/27/a03617d4-5fc7-43a9-82b8-c7cb151aaa97.png" alt="" height="400" width="580" style="display: block; padding: 0px; text-align: center; height: 400px; width: 580px; border: 0px;"></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #FBD9DE; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 25px 35px; " class="stylingblock-content-wrapper camarker-inner">
+<!-- BEGIN: Big Bold Statement 2 Section --><table cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" style=" font-family: 'Montserrat', Arial, sans-serif; font-size: 28px; line-height: 32px; mso-line-height-rule: exactly; font-weight: bold; color:#211261;" width="100%">
+				<h1 style="color:#000000;font-family:Arial, helvetica, sans-serif;font-size:32px;font-style:normal;font-weight:bold;line-height:115%;">
+					<span style="background-color:#ffffff;">&nbsp; WELCOME TO ASD&nbsp;&nbsp;</span></h1></td></tr><tr>
+			<td align="center" style=" font-family: 'Montserrat', Arial, sans-serif; font-size: 16px; line-height: 22px; mso-line-height-rule: exactly; font-weight: normal; color:#333333; padding-top: 15px; mso-padding-alt: 15px 0 0 0; text-align: center" width="100%">
+				<span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Body copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum augue eu arcu ullamcorper cursus. Morbi porttitor tellus lectus, id suscipit enim hendrerit sit amet. Praesent auctor a mauris vitae vulputate. Fusce porta sapien eget velit maximus aliquet.&nbsp;</span></span></span></td></tr></table><!--END: Big Bold Statement 2 Section --></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #FBD9DE; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 25px; " class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+	
+		<tr>
+			<td align="center">
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation">
+					
+						<tr>
+							<td bgcolor="#25B5E4" class="innertd buttonblock" style=" border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; color: #FFFFFF; background-color: #25B5E4;">
+								<a alias="" class="buttonstyles" conversion="false" data-linkto="http://" href="http://#" style=" font-size: 16px; font-family: Arial, helvetica, sans-serif; font-weight: regular; color: #FFFFFF; text-align: center; text-decoration: none; display: block; line-height: 100%; background-color: #25B5E4; border: 4px solid #25B5E4; padding: 10px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;" target="_blank" title="">MAIN CTA BUTTON LINK</a></td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="center">
+<img data-assetid="171478" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/27/beee95d1-c428-4308-b3d3-17244d624d74.png" alt="" width="100%" style="display: block; width: 100%; height: auto; padding: 0px; text-align: center;"></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 25px 35px 10px 10px; " class="stylingblock-content-wrapper camarker-inner"><div>
+	<!-- BEGIN: Big Bold Statement 2 Section --></div><table cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" style=" font-family: 'Montserrat', Arial, sans-serif; font-size: 28px; line-height: 32px; mso-line-height-rule: exactly; font-weight: bold; color:#211261;" width="100%">
+				<h2 style="color:#505050;font-family:Arial, helvetica, sans-serif;font-size:22px;font-style:normal;font-weight:bold;line-height:115%;text-align:left;">
+					<span style="background-color:#ffffff;">RECENT ARTICLES</span></h2></td></tr></table><!--END: Big Bold Statement 2 Section --></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 25px 10px; " class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="left"><img data-assetid="171732" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/27/1e75502d-6bb4-4fce-950a-e6c1f9c50116.png" alt="" height="5" width="118" style="display: block; padding: 0px; text-align: left; height: 5px; width: 118px;"></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr>
+<td style="padding: 10px 10px 0px; " class="stylingblock-content-wrapper camarker-inner"><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td valign="top" class="responsive-td" style="width: 50%; padding-right: 15px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="left"><a style="font-weight:normal;color:#25B5E4;text-decoration:underline;line-height:100%;" href="http://##" title="" alias="" conversion="false" data-linkto="http://">
+<img data-assetid="171528" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/27/3f05ca7f-97e5-4d92-9dab-82249057252a.png" alt="" height="275" width="275" style="display: block; padding: 0px; text-align: left; border: 0px; height: 275px; width: 275px;" class="photo"></a></td></tr></table></td></tr>
+</table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 5px 5px 10px; " class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+ <!-- Start: Feature Headline -->
+  <tr>
+   <td class="stylingblock-content-wrapper camarker-inner" style="padding-bottom: 5px; padding-right: 0px; font-weight: bold; color: rgb(51, 51, 51); font-family: Montserrat, Arial, sans-serif; font-size: 20px; text-align: center;">
+    <span style="font-size:14px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;line-height: 32px"><a alias="Creating Successful Ad Campaigns" conversion="false" data-linkto="https://" href="https://asdonline.com/blog/online-selling/the-essential-guide-to-amazon-fba-reimbursement/" style="color:#000000;text-decoration:underline;" title="Creating Successful Ad Campaigns">The Essential Guide to Amazon FBA</a></span></span></span></td></tr><!-- END: Feature Headline --><!-- Start: Feature Subtitle--><!-- END: Feature body --><!-- Start: Feature Subtitle--><!-- END: Feature subtitle --></table></td></tr></table></td>
+<td valign="top" class="responsive-td" style="width: 50%; padding-left: 15px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="left"><a style="font-weight:normal;color:#25B5E4;text-decoration:underline;line-height:100%;" href="http://##" title="" alias="" conversion="false" data-linkto="http://"><img data-assetid="171487" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/27/e7055231-5c5b-4ae1-820b-7abb67ceb50c.png" alt="" height="275" width="275" style="display: block; padding: 0px; text-align: left; height: 275px; width: 275px; border: 0px;" class="photo"></a></td></tr></table></td></tr>
+</table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 5px 5px 10px; " class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+ <!-- Start: Feature Headline -->
+  <tr>
+   <td class="stylingblock-content-wrapper camarker-inner" style="padding-bottom: 5px; padding-right: 0px; font-weight: bold; color: rgb(51, 51, 51); font-family: Montserrat, Arial, sans-serif; font-size: 20px; text-align: center;">
+    <span style="font-size:14px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;line-height: 32px"><a alias="Creating Successful Ad Campaigns" conversion="false" data-linkto="https://" href="https://asdonline.com/blog/online-selling/the-essential-guide-to-amazon-fba-reimbursement/" style="color:#000000;text-decoration:underline;" title="Creating Successful Ad Campaigns">The Essential Guide to Amazon FBA</a></span></span></span></td></tr><!-- END: Feature Headline --><!-- Start: Feature Subtitle--><!-- END: Feature body --><!-- Start: Feature Subtitle--><!-- END: Feature subtitle --></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 10px 25px; " class="stylingblock-content-wrapper camarker-inner">
+<table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td valign="top" class="responsive-td" style="width: 50%; padding-right: 15px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="left"><a style="font-weight:normal;color:#25B5E4;text-decoration:underline;line-height:100%;" href="http://##" title="" alias="" conversion="false" data-linkto="http://">
+<img data-assetid="171530" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/27/eed0bf0d-ae94-40f1-8ea4-4fe7ca430610.png" alt="" height="275" width="275" style="display: block; padding: 0px; text-align: left; border: 0px; height: 275px; width: 275px;" class="photo"></a></td></tr></table></td></tr>
+</table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 5px 5px 10px; " class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+	<!-- Start: Feature Headline -->
+		<tr>
+			<td class="stylingblock-content-wrapper camarker-inner" style="padding-bottom: 5px; padding-right: 0px; font-weight: bold; color: rgb(51, 51, 51); font-family: Montserrat, Arial, sans-serif; font-size: 20px; text-align: center;">
+				<span style="font-size:14px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;line-height: 32px"><a alias="Creating Successful Ad Campaigns" conversion="false" data-linkto="https://" href="https://asdonline.com/blog/online-selling/the-essential-guide-to-amazon-fba-reimbursement/" style="color:#000000;text-decoration:underline;" title="Creating Successful Ad Campaigns">The Essential Guide to Amazon FBA</a></span></span></span></td></tr><!-- END: Feature Headline --><!-- Start: Feature Subtitle--><!-- END: Feature body --><!-- Start: Feature Subtitle--><!-- END: Feature subtitle --></table></td></tr></table></td>
+<td valign="top" class="responsive-td" style="width: 50%; padding-left: 15px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="left"><a style="font-weight:normal;color:#25B5E4;text-decoration:underline;line-height:100%;" href="http://##" title="" alias="" conversion="false" data-linkto="http://"><img data-assetid="171529" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/27/1057a5df-606e-4b09-879a-c822ffdc4005.png" alt="" height="275" width="275" style="display: block; padding: 0px; text-align: left; height: 275px; width: 275px; border: 0px;" class="photo"></a></td></tr></table></td></tr>
+</table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 5px 5px 10px; " class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+	<!-- Start: Feature Headline -->
+		<tr>
+			<td class="stylingblock-content-wrapper camarker-inner" style="padding-bottom: 5px; padding-right: 0px; font-weight: bold; color: rgb(51, 51, 51); font-family: Montserrat, Arial, sans-serif; font-size: 20px; text-align: center;">
+				<span style="font-size:14px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;line-height: 32px"><a alias="Creating Successful Ad Campaigns" conversion="false" data-linkto="https://" href="https://asdonline.com/blog/marketing/calculating-sale-price-margins/" style="color:#000000;text-decoration:underline;" title="Creating Successful Ad Campaigns">Calculating Margins and Markups</a></span></span></span></td></tr><!-- END: Feature Headline --><!-- Start: Feature Subtitle--><!-- END: Feature body --><!-- Start: Feature Subtitle--><!-- END: Feature subtitle --></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 25px 35px 10px 10px; " class="stylingblock-content-wrapper camarker-inner"><div>
+	<!-- BEGIN: Big Bold Statement 2 Section --></div><table cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" style=" font-family: 'Montserrat', Arial, sans-serif; font-size: 28px; line-height: 32px; mso-line-height-rule: exactly; font-weight: bold; color:#211261;" width="100%">
+				<h2 style="color:#505050;font-family:Arial, helvetica, sans-serif;font-size:22px;font-style:normal;font-weight:bold;line-height:115%;text-align:left;">
+					<span style="background-color:#ffffff;">LATEST VENDORS</span></h2></td></tr></table><!--END: Big Bold Statement 2 Section --></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 25px 10px; " class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="left"><img data-assetid="171731" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/27/b5866ada-2217-43c1-9ddd-ca1b655d7942.png" alt="" height="5" width="118" style="display: block; padding: 0px; text-align: left; height: 5px; width: 118px;"></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr>
+<td style="padding: 0px 10px 10px; " class="stylingblock-content-wrapper camarker-inner"><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td valign="top" class="responsive-td" style="width: 40%; padding-right: 0px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="left"><img data-assetid="171534" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/27/c3d75ac6-cba9-4457-a031-de4eb129702b.png" alt="" height="225" width="250" style="display: block; padding: 0px; text-align: left; height: 225px; width: 250px; border: 0px;" class="photo"></td></tr></table></td></tr></table></td>
+<td valign="top" class="responsive-td" style="width: 60%; padding-left: 0px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 20px 35px; " class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+	<!-- Start: Feature Headline --><!-- END: Feature Headline --><!-- Start: Feature Subtitle-->
+		<tr>
+			<td class="stylingblock-content-wrapper camarker-inner" style="font-family: Montserrat, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: rgb(51, 51, 51);">
+				<h2 style="color:#505050;font-family:Arial, helvetica, sans-serif;font-size:22px;font-style:normal;font-weight:bold;line-height:115%;">
+					<span style="color:#ffffff;"><span style="background-color:#000000;">SPIRIT OF NATURE, INC</span></span></h2></td></tr><tr>
+			<td class="stylingblock-content-wrapper camarker-inner" style="font-family: Montserrat, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: rgb(51, 51, 51);">
+				<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color:#505050;">ASD Market Week is the most comprehensive tradeshow for consumer merchandise in any category you can think of - gift, home, general merchandise, apparel, beauty, and much more.</span><br>
+				<br>
+				<b><a alias="Register for free now." conversion="false" data-linkto="http://" href="http://#" style="color:#000000;text-decoration:underline;" title="Register for free now.">GET MORE &gt;</a></b></span></span></td></tr><!-- END: Feature body --><!-- Start: Feature Subtitle--><!-- END: Feature subtitle --></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 10px 25px; " class="stylingblock-content-wrapper camarker-inner"><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td valign="top" class="responsive-td" style="width: 40%; padding-right: 0px;">
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="left"><img data-assetid="171537" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/27/9907ecdf-1ed7-4365-b099-569f09316126.png" alt="" height="225" width="250" style="display: block; padding: 0px; text-align: left; height: 225px; width: 250px; border: 0px;" class="photo"></td></tr></table></td></tr></table></td><td valign="top" class="responsive-td" style="width: 60%; padding-left: 0px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 20px 35px; " class="stylingblock-content-wrapper camarker-inner">
+<table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+	<!-- Start: Feature Headline --><!-- END: Feature Headline --><!-- Start: Feature Subtitle-->
+		<tr>
+			<td class="stylingblock-content-wrapper camarker-inner" style="font-family: Montserrat, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: rgb(51, 51, 51);">
+				<h2 style="color:#505050;font-family:Arial, helvetica, sans-serif;font-size:22px;font-style:normal;font-weight:bold;line-height:115%;">
+					<span style="color:#ffffff;"><span style="background-color:#000000;">LOLA SOAP</span></span></h2></td></tr><tr>
+			<td class="stylingblock-content-wrapper camarker-inner" style="font-family: Montserrat, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: rgb(51, 51, 51);">
+				<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color:#505050;">ASD Market Week is the most comprehensive tradeshow for consumer merchandise in any category you can think of - gift, home, general merchandise, apparel, beauty, and much more.</span><br>
+				<br>
+				<b><a alias="Register for free now." conversion="false" data-linkto="http://" href="http://#" style="color:#000000;text-decoration:underline;" title="Register for free now.">GET MORE &gt;</a></b></span></span></td></tr><!-- END: Feature body --><!-- Start: Feature Subtitle--><!-- END: Feature subtitle --></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 25px; " class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+ 
+  <tr>
+   <td align="center">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+     
+      <tr>
+       <td bgcolor="#25B5E4" class="innertd buttonblock" style=" border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; color: #FFFFFF; background-color: #25B5E4;">
+        <a alias="" class="buttonstyles" conversion="false" data-linkto="http://" href="http://#" style=" font-size: 16px; font-family: Arial, helvetica, sans-serif; font-weight: regular; color: #FFFFFF; text-align: center; text-decoration: none; display: block; line-height: 100%; width: 600px; background-color: #25B5E4; border: 4px solid #25B5E4; padding: 10px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;" target="_blank" title="">MAIN CTA BUTTON LINK</a></td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #FBE5B6; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 25px 10px; " class="stylingblock-content-wrapper camarker-inner"><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr>
+<td valign="top" class="responsive-td" style="width: 50%; padding-right: 0px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 0px 10px; " class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="center"><img data-assetid="171540" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/27/00925b9e-2b6d-4366-b9b1-f9958f8afb82.png" alt="" height="250" width="250" style="display: block; padding: 0px; text-align: center; height: 250px; width: 250px; border: 0px;" class="photo"></td></tr></table></td></tr></table></td>
+<td valign="top" class="responsive-td" style="width: 50%; padding-left: 0px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 10px; " class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+	<!-- Start: Feature Headline --><!-- END: Feature Headline --><!-- Start: Feature Subtitle-->
+		<tr>
+			<td class="stylingblock-content-wrapper camarker-inner" style="font-family: Montserrat, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: rgb(51, 51, 51);">
+				<h2 style="color: rgb(80, 80, 80); font-family: Arial, helvetica, sans-serif; font-size: 22px; font-style: normal; font-weight: bold; line-height: 115%;">
+					<span style="color:#ffffff;"><span style="background-color:#000000;">&nbsp; SPECIAL EVENTS&nbsp;&nbsp;</span></span></h2></td></tr><tr>
+			<td class="stylingblock-content-wrapper camarker-inner" style="font-family: Montserrat, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: rgb(51, 51, 51);">
+				<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color:#505050;">ASD Market Week is the most comprehensive tradeshow for consumer merchandise in any category you can think of - gift, home, general merchandise, apparel, beauty, and much more.</span><br>
+				<br>
+				<b><a alias="Register for free now." conversion="false" data-linkto="http://" href="http://#" style="color:#000000;text-decoration:underline;" title="Register for free now.">GET MORE &gt;</a></b></span></span></td></tr><!-- END: Feature body --><!-- Start: Feature Subtitle--><!-- END: Feature subtitle --></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" class="stylingblock-content-wrapper" style="min-width: 100%; "><tr><td class="stylingblock-content-margin-cell" style="padding: 0px 10px; "><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 25px; " class="stylingblock-content-wrapper camarker-inner"><!-- BEGIN: Big Bold Statement 2 Section --><table cellpadding="0" cellspacing="0" width="100%">
+ 
+  <tr>
+   <td align="center" style=" font-family: 'Montserrat', Arial, sans-serif; font-size: 28px; line-height: 32px; mso-line-height-rule: exactly; font-weight: bold; color:#211261;" width="100%">
+    <h2 style="color:#505050;font-family:Arial, helvetica, sans-serif;font-size:22px;font-style:normal;font-weight:bold;line-height:115%;">
+     BOOK YOUR HOTEL</h2></td></tr><tr>
+   <td align="center" style=" font-family: 'Montserrat', Arial, sans-serif; font-size: 16px; line-height: 22px; mso-line-height-rule: exactly; font-weight: normal; color:#333333;  text-align: center" width="100%">
+    <span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color:#505050;">Body copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum augue eu arcu ullamcorper cursus.&nbsp;</span></span></span></td></tr></table><!--END: Big Bold Statement 2 Section --></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" class="stylingblock-content-wrapper" style="min-width: 100%; "><tr><td class="stylingblock-content-margin-cell" style="padding: 0px 10px 25px; "><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 25px 5px; " class="stylingblock-content-wrapper camarker-inner"><table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr><td>
+<table cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;"><tr>
+<td valign="top" class="responsive-td" style="width: 33%; padding-right: 3.33333px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="center"><a href="https://asdonline.com/hotel-travel/book-hotel" title="" alias="" conversion="false" data-linkto="https://"><img data-assetid="115995" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/19/d5ea48b9-d33e-4c84-ac46-1ffa822a8fb2.png" alt="Renaissance Hotel" height="100" width="150" style="display: block; padding: 0px; text-align: center; height: 100px; width: 150px; border: 0px;"></a></td></tr></table></td></tr>
+</table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px 10px 15px; " class="stylingblock-content-wrapper camarker-inner"><!-- START Feature TExt --><table cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+	
+		<tr>
+			<td class="stylingblock-content-wrapper camarker-inner" style="padding-bottom: 5px; font-weight: bold; color: rgb(51, 51, 51); font-family: Montserrat, Arial, sans-serif; font-size: 20px; line-height: 26px; text-align: left;">
+				<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b><a alias="Hotel Name" conversion="false" data-linkto="https://" href="https://asdonline.com/hotel-travel/book-hotel" style="color:#25B5E4;text-decoration:underline;font-weight:normal;line-height:100%;" title="Hotel Name">Renaissance Hotel</a></b></span></span></td></tr><tr>
+			<td class="stylingblock-content-wrapper camarker-inner padBot20" style="padding-bottom: 0px; font-family: Montserrat, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: rgb(51, 51, 51); text-align: left;">
+				<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>$179/night*</strong></span></span></td></tr><tr>
+			<td class="stylingblock-content-wrapper camarker-inner padBot20" style="padding-bottom: 0px; font-family: Montserrat, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: rgb(51, 51, 51); text-align: left;">
+			</td></tr></table><!-- END Feature Text --></td></tr></table></td><td valign="top" class="responsive-td" style="width: 33%; padding-left: 1.66667px; padding-right: 1.66667px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="center"><a href="https://asdonline.com/hotel-travel/book-hotel/" title="" alias="" conversion="false" data-linkto="https://"><img data-assetid="115992" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/19/360543c2-0f5f-48c9-b1a0-0f9f632f94bc.png" alt="Treasure Island" height="100" width="150" style="display: block; padding: 0px; text-align: center; height: 100px; width: 150px; border: 0px;"></a></td></tr></table></td></tr>
+</table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px 10px 15px; " class="stylingblock-content-wrapper camarker-inner"><!-- START Feature TExt --><table cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+	
+		<tr>
+			<td class="stylingblock-content-wrapper camarker-inner" style="padding-bottom: 5px; font-weight: bold; color: rgb(51, 51, 51); font-family: Montserrat, Arial, sans-serif; font-size: 20px; line-height: 26px; text-align: left;">
+				<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b><a alias="Hotel Name" conversion="false" data-linkto="https://" href="https://asdonline.com/hotel-travel/book-hotel" style="color:#25B5E4;text-decoration:underline;font-weight:normal;line-height:100%;" title="Hotel Name">Renaissance Hotel</a></b></span></span></td></tr><tr>
+			<td class="stylingblock-content-wrapper camarker-inner padBot20" style="padding-bottom: 0px; font-family: Montserrat, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: rgb(51, 51, 51); text-align: left;">
+				<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>$179/night*</strong></span></span></td></tr></table><!-- END Feature Text --></td></tr></table></td><td valign="top" class="responsive-td" style="width: 33%; padding-left: 3.33333px;"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0" role="presentation"><tr><td align="center"><a href="https://asdonline.com/hotel-travel/book-hotel/" title="" alias="" conversion="false" data-linkto="https://">
+<img data-assetid="115993" src="https://image.m.emeraldexpoinfo.com/lib/fe3911717164047c761478/m/19/876bc827-dc51-4b4c-9f4f-d336836194e8.png" alt="Hilton Grand Vacations" height="100" width="150" style="display: block; padding: 0px; text-align: center; height: 100px; width: 150px; border: 0px;"></a></td></tr></table></td></tr>
+</table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 10px 20px 10px 15px; " class="stylingblock-content-wrapper camarker-inner"><!-- START Feature TExt --><table cellpadding="0" cellspacing="0" style="text-align: center;" width="100%">
+	
+		<tr>
+			<td class="stylingblock-content-wrapper camarker-inner" style="padding-bottom: 5px; font-weight: bold; color: rgb(51, 51, 51); font-family: Montserrat, Arial, sans-serif; font-size: 20px; line-height: 26px; text-align: left;">
+				<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b><a alias="Hotel Name" conversion="false" data-linkto="https://" href="https://asdonline.com/hotel-travel/book-hotel" style="color:#25B5E4;text-decoration:underline;font-weight:normal;line-height:100%;" title="Hotel Name">Renaissance Hotel</a></b></span></span></td></tr><tr>
+			<td class="stylingblock-content-wrapper camarker-inner padBot20" style="padding-bottom: 0px; font-family: Montserrat, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: rgb(51, 51, 51); text-align: left;">
+				<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>$179/night*</strong></span></span></td></tr></table><!-- END Feature Text --></td></tr></table></td></tr></table></td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #25B5E4; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 25px 35px; " class="stylingblock-content-wrapper camarker-inner"><!-- BEGIN: Big Bold Statement 2 Section --><table cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" style=" font-family: 'Montserrat', Arial, sans-serif; font-size: 28px; line-height: 32px; mso-line-height-rule: exactly; font-weight: bold; color:#211261;" width="100%">
+				<h1 style="color:#000000;font-family:Arial, helvetica, sans-serif;font-size:32px;font-style:normal;font-weight:bold;line-height:115%;">
+					<span style="background-color:#ffffff;">&nbsp; JOIN US AT ASD&nbsp;&nbsp;</span></h1></td></tr><tr>
+			<td align="center" style=" font-family: 'Montserrat', Arial, sans-serif; font-size: 16px; line-height: 22px; mso-line-height-rule: exactly; font-weight: normal; color:#333333; padding-top: 15px; mso-padding-alt: 15px 0 0 0; text-align: center" width="100%">
+				<span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Body copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;Body copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;</span></span></span></td></tr></table><!--END: Big Bold Statement 2 Section --></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #25B5E4; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 25px; " class="stylingblock-content-wrapper camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+ 
+  <tr>
+   <td align="center">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+     
+      <tr>
+       <td bgcolor="#25B5E4" class="innertd buttonblock" style=" border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; color: #FFFFFF; background-color: #000000;">
+        <a alias="" class="buttonstyles" conversion="false" data-linkto="http://" href="http://#" style=" font-size: 16px; font-family: Arial, helvetica, sans-serif; font-weight: regular; color: #FFFFFF; text-align: center; text-decoration: none; display: block; line-height: 100%; background-color: #000000; border: 4px solid #000000; padding: 10px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;" target="_blank" title="">MAIN CTA BUTTON LINK</a></td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 15px 10px 0px; " class="stylingblock-content-wrapper camarker-inner"><table cellpadding="0" cellspacing="0" class="socialshare-wrapper" width="100%"><tr><td align="center"><table cellpadding="0" cellspacing="0" align="center"><tr><td align="center">
+<!--[if mso]><table border="0" cellspacing="0" cellpadding="0"><tr><td style="padding-right:10px;"><![endif]--><table class="socialshare-innertable" style="display: inline-block"><tr><td style="padding:5px 10px">
+<a style="font-weight:normal;color:#25B5E4;text-decoration:underline;line-height:100%;" href="https://www.facebook.com/ASDTradeShows" alias="facebook follow"><img src="https://image.s4.exct.net/lib/fe911573736c007d7d/m/2/e76b988d-8feb-4d15-b8d9-1ccf4bee17cd.png" alt="Facebook" width="24" height="24" style="display: block;; width: 24px !important; height: 24px !important"></a></td></tr></table><!--[if mso]></td><td style="padding-right:10px;"><![endif]--><table class="socialshare-innertable" style="display: inline-block"><tr><td style="padding:5px 10px"><a style="font-weight:normal;color:#25B5E4;text-decoration:underline;line-height:100%;" href="https://twitter.com/ASDShow" alias="twitter follow">
+<img src="https://image.s4.exct.net/lib/fe911573736c007d7d/m/2/f071eec4-5672-4190-b5c4-03c64fd3f5bd.png" alt="Twitter" width="24" height="24" style="display: block;; width: 24px !important; height: 24px !important"></a></td></tr></table><!--[if mso]></td><td style="padding-right:10px;"><![endif]--><table class="socialshare-innertable" style="display: inline-block"><tr><td style="padding:5px 10px"><a style="font-weight:normal;color:#25B5E4;text-decoration:underline;line-height:100%;" href="https://www.instagram.com/asdshow/" alias="instagram follow"><img src="https://image.s4.exct.net/lib/fe911573736c007d7d/m/2/a52c2f3b-22ab-4dfc-ad5e-c4b50bec5650.png" alt="Instagram" width="24" height="24" style="display: block;; width: 24px !important; height: 24px !important"></a></td></tr></table>
+<!--[if mso]></td><td><![endif]--><table class="socialshare-innertable" style="display: inline-block"><tr><td style="padding:5px 10px"><a style="font-weight:normal;color:#25B5E4;text-decoration:underline;line-height:100%;" href="https://www.linkedin.com/company/asd-market-week" alias="linkedin follow"><img src="https://image.s4.exct.net/lib/fe911573736c007d7d/m/2/43511da8-7916-47f0-8134-5b478ce22f3c.png" alt="LinkedIn" width="24" height="24" style="display: block;; width: 24px !important; height: 24px !important"></a></td></tr></table><!--[if mso]></td></tr></table><![endif]--></td></tr></table></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px 0px 16px; " class="stylingblock-content-wrapper camarker-inner"><div style="text-align: center;">
+	<strong>#ASDshow</strong></div></td></tr></table>
+                                                        
+                                                        <!-- START BRAND OPT OUT SLOT -->
+                                                        <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: #FFFFFF; min-width: 100%; " class="slot-styling"><tr><td style="padding: 0px; " class="slot-styling camarker-inner"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 20px 25px; " class="stylingblock-content-wrapper camarker-inner"><!--START: Variable Footer --><table cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" style="background-color: #; font-family: 'Montserrat', Arial, sans-serif; font-size: 14px; font-weight: normal; color:#333333;   padding-left: 25px; padding-right: 25px;" width="100%">
+				<b>ASD Market Week</b><br>
+				600 Corporate Pointe, Culver City, CA 90230<br>
+				This email was sent to <a alias="" href="#" style="color: #211261; text-decoration: underline;">%%emailaddr%%</a>.<br>
+				&nbsp;</td></tr></table><!--END: Variable Footer  --></td></tr></table></td></tr></table>
+                                                        
+                                                        
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td width="100%" style="font-family: 'Montserrat', Arial, sans-serif; font-size: 11px; color: #777; padding: 20px;" align="center">
+                      <a href="javascript:void(0);" alias="Update Profile" style="text-decoration: underline; color: #777;">Update My Preferences</a><br><br>
+                      Copyright &copy; %%xtyear%% Emerald X, LLC.. All rights reserved.<br>San Juan Capistrano, CA, 92675, US</td></tr></table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
